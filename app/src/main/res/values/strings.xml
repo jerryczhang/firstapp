@@ -2,4 +2,8 @@
     <string name="app_name">First App</string>
     <string name="edit_message">Enter a message</string>
     <string name="button_send">Send</string>
+    <string name="title_activity_bot_nav">BotNavActivity</string>
+    <string name="title_tab1">Tab 1</string>
+    <string name="title_tab2">Tab 2</string>
+    <string name="title_tab3">Tab 3</string>
 </resources>

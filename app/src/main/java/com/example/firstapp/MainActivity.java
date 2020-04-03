@@ -15,7 +15,7 @@ import android.widget.ImageView;
 public class MainActivity extends AppCompatActivity {
     public static final String EXTRA_MESSAGE = "com.example.myfirstapp.MESSAGE";
     ImageView androidImage;
-    int currentColor = 0;
+    int currentColor;
     int[] colors = {Color.RED, Color.YELLOW, Color.BLUE};
 
     @Override
@@ -24,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         androidImage = (ImageView) findViewById(R.id.android_im);
+        currentColor = 0;
         changeIconColor(androidImage);
     }
 
@@ -38,7 +39,9 @@ public class MainActivity extends AppCompatActivity {
     public void changeIconColor(View view) {
         androidImage.setColorFilter(colors[currentColor++], PorterDuff.Mode.MULTIPLY);
         if (currentColor == colors.length) {
+            Intent intent = new Intent(this, BotNavActivity.class);
             currentColor = 0;
+            startActivity(intent);
         }
     }
 }
