@@ -41,4 +41,9 @@ public class MainActivity extends AppCompatActivity {
             currentColor = 0;
         }
     }
+
+    public void goToSum(View view) {
+        Intent intent = new Intent(this, SumActivity.class);
+        startActivity(intent);
+    }
 }
