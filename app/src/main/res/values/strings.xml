@@ -3,4 +3,6 @@
     <string name="edit_message">Enter a message</string>
     <string name="button_send">Send</string>
     <string name="button_sum">Sum Calculator</string>
+    <string name="edit_num">Enter a number</string>
+    <string name="button_add">Add</string>
 </resources>
