@@ -1,14 +1,15 @@
 package com.example.firstapp;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.PorterDuff;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageView;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
     public static final String EXTRA_MESSAGE = "com.example.myfirstapp.MESSAGE";
@@ -43,5 +44,15 @@ public class MainActivity extends AppCompatActivity {
     public void goToSum(View view) {
         Intent intent = new Intent(this, SumActivity.class);
         startActivity(intent);
+    }
+
+    public void launchGoogle(View view) {
+        String google = "http://www.google.com";
+        Uri googleAddress = Uri.parse(google);
+
+        Intent gotoGoogle = new Intent(Intent.ACTION_VIEW, googleAddress);
+        if (gotoGoogle.resolveActivity(getPackageManager()) != null) {
+            startActivity(gotoGoogle);
+        }
     }
 }
