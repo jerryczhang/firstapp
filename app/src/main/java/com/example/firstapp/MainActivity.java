@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    public void goToSum(View view) {
+    public void gotoSum(View view) {
         Intent intent = new Intent(this, SumActivity.class);
         startActivity(intent);
     }
@@ -54,5 +54,10 @@ public class MainActivity extends AppCompatActivity {
         if (gotoGoogle.resolveActivity(getPackageManager()) != null) {
             startActivity(gotoGoogle);
         }
+    }
+
+    public void gotoList(View view) {
+        Intent intent = new Intent(this, ListActivity.class);
+        startActivity(intent);
     }
 }
