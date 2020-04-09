@@ -8,9 +8,9 @@
     <string name="button_google">Google Search</string>
     <string name="button_gotoList">List</string>
     <string-array name="items">
-        <item>peach</item>
-        <item>tomato</item>
-        <item>squash</item>
+        <item>Peach</item>
+        <item>Tomato</item>
+        <item>Squash</item>
     </string-array>
     <string-array name="prices">
         <item>$0.99</item>
