@@ -12,7 +12,7 @@ import android.widget.ImageView;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
-    public static final String EXTRA_MESSAGE = "com.example.myfirstapp.MESSAGE";
+    public static final String EXTRA_MESSAGE = "com.example.firstapp.MESSAGE";
     ImageView androidImage;
     int currentColor = 0;
     int[] colors = {Color.RED, Color.YELLOW, Color.BLUE};
